@@ -1,0 +1,97 @@
+@charset "UTF-8";
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	width:100%;
+	margin:0 auto;
+	
+}
+ul, ol, li{
+	list-style:none;
+	margin :0px;
+	padding: 0px;
+}
+
+a, a:visited{
+	text-decoration: none;
+}
+table{
+	border:1px solid black;
+	border-collapse: collapse;
+	margin: 0 auto; /* 부모 요소 안에서의 가운데 정렬, 현재는 브라우저의 가운데 */
+	margin-top: 10px; /* 수정할 부분 */
+	/* text-align: center; */
+}
+tr, th, td{
+	border: 1px solid black;
+	height: 40px; /* 수정할 부분 */
+	/* text-align: center; */
+	line-height: 20px;
+}
+/* header 부분 */
+.header >h1{
+width: 100%;
+height: 100px;
+line-height: 100px;
+text-align: center;
+background-color: blue;
+color: white;
+}
+/* nav 부분 */
+
+.nav{
+width : 100%;
+background-color: gray;
+}
+/*
+.nav>ul{
+	overflow: hidden;
+	margin-left: 20px;
+}
+.nav li{
+height : 40px;
+line-height : 40px;
+float: left;
+margin-left: 10px;
+}
+.nav li>a{
+color: white;
+}*/
+.nav li{
+display: inline-block; /* 줄바꿈을 하지 않음 */
+}
+.nav li>a{
+	display: block; /* 영역을 넓게 잡기 위함 */
+	padding: 20px 10px;
+	color: white;
+}
+.nav li>a:visited{ /* a 태그 방문 후 */
+	color: white;
+}
+
+/* section 부분 */
+.section{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #e5e5e5;
+}
+.section > h2{
+	text-align: center;
+	margin: 30px 0px 20px 0px;
+}
+.section > div{
+	margin-left: 10px;
+}
+/* fotter 부분 */
+.footer{
+width:100%;
+height:50px;
+line-height: 50px;
+text-align: center;
+position: absolute;
+bottom: 0px;
+background-color: blue;
+}
